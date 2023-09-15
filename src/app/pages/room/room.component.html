@@ -1,1 +1,10 @@
-<p>room works!</p>
+<div class="wrapper">
+  <input class="hidden-input" type="text" name="txt" value="" (input)="sendTosServer($event, 1)">
+  
+  <div class="cont">
+    <h1>{{ fireStoreTextsOne$ | async }}</h1>
+    <h1>{{ fireStoreTextsTwo$ | async }}</h1>
+  </div>
+
+  <input class="visible-input" type="text" name="txt" value="" (input)="sendTosServer($event, 2)">
+</div>

@@ -1,0 +1,49 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100dvw;
+  height: 100dvh;
+  background: #111;
+  overflow: hidden;
+
+  .cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+
+    h1 {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      color: #008f11;
+      height: 50%;
+      margin: 0;
+      font-family: Robotic, sans-serif;
+      font-size: 16px;
+
+      &:nth-child(2) {
+        align-items: flex-end;
+        justify-content: end;
+      }
+    }
+  }
+  .hidden-input {
+    position: absolute;
+    right: 100dvw;
+  }
+
+  .visible-input {
+    position: relative;
+    bottom: 0;
+    color: #008f11;
+    background: #000;
+    border: none;
+    height: 20%;
+    padding: 0 16px;
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+}
